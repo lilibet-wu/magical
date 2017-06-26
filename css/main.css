@@ -1,0 +1,67 @@
+.magicalBody form .form-group{
+    position: relative;
+}
+.magicalBody form .input-group-lg input.form-control,
+.magicalBody form .input-group-lg select.form-control,
+.magicalBody form .input-group-lg textarea.form-control{
+    padding: 18px 12px 1px 4px;
+    font-size: 24px;
+}
+.magicalBody form .input-group-lg label {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    transition: 0.2s;
+    font-size: 24px;
+    padding: 4px;
+    color: #ACACAC;
+}
+.magicalBody form .input-group-lg.col-6 label {
+    left: 16px;
+}
+.magicalBody form .input-group-lg input:focus + label,
+.magicalBody form .input-group-lg input:valid + label,
+.magicalBody form .input-group-lg select + label,
+.magicalBody form .input-group-lg textarea + label{
+    top: -16px;
+    height: 12px;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.magicalBody .close-icon{
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    background: lightgrey;
+    height: 36px;
+    border-radius: 5px;
+}
+.magicalBody .info-block {
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4.8px;
+    display: flex;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+.magicalBody .info-block .public-profile {
+    text-align: center;
+}
+.magicalBody button.btn {
+    height: 38px;
+}
+.magicalBody .btn span{
+    position: relative;
+    top: -12px;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 8px;
+}
+.magicalBody .card-img img {
+    width: 100%;
+}
