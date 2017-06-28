@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>Magical Account</title>
+</head>
+<body class="magicalBody">
+    <div class="close-icon">
+        <i class="material-icons md-36 md-dark">clear</i>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h1>account</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                <div class="card p-5">
+                    <img class="card-img" src="../asserts/images/profile-icon.png">
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center mt-3">
+                        <button type="button" class="btn btn-primary py-0 px-3">
+                            <i class="material-icons md-36 md-light md-thick">close</i>
+                            <span>close account</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                <form id="accountFormId">
+                    <div class="form-group input-group-lg">
+                        <input type="text" class="form-control rounded" id="emailId" aria-describedby="email" required>
+                        <label for="emailId">email</label>
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <input type="text" class="form-control rounded" id="backupEmailId" aria-describedby="backup email" required>
+                        <label for="backupEmailId">backup email</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6 input-group-lg pr-0">
+                                <select class="form-control custom-select rounded" id="birthdayDayId">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <label for="birthdayDayId">birthday day</label>
+                            </div>
+                            <div class="col-6 input-group-lg">
+                                <select class="form-control custom-select rounded" id="birthdayMonthId">
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                </select>
+                                <label for="birthdayMonthId">birthday month</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6 input-group-lg pr-0">
+                                <select class="form-control custom-select rounded" id="genderId">
+                                    <option>male</option>
+                                    <option>female</option>
+                                    <option>not tell</option>
+                                </select>
+                                <label for="genderId">gender</label>
+                            </div>
+                            <div class="col-6 input-group-lg">
+                                <select class="form-control custom-select rounded" id="languageId">
+                                    <option>English</option>
+                                    <option>French</option>
+                                    <option>Chinese</option>
+                                </select>
+                                <label for="languageId">language</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <input type="text" class="form-control rounded" id="suburbId" aria-describedby="suburb" required>
+                        <label for="suburbId">suburb</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6 input-group-lg pr-0">
+                                <select class="form-control custom-select rounded" id="stateId">
+                                    <option>springfield</option>
+                                    <option>eastwood</option>
+                                    <option>gorden</option>
+                                </select>
+                                <label for="stateId">state</label>
+                            </div>
+                            <div class="col-6 input-group-lg">
+                                <input type="text" class="form-control rounded" id="postcodeId" aria-describedby="postcode" required>
+                                <label for="postcodeId">postcode</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <select class="form-control custom-select rounded" id="countryId">
+                            <option>Australia</option>
+                        </select>
+                        <label for="countryId">country</label>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-8 d-flex justify-content-start">
+                        <button type="button" class="btn btn-primary py-0 px-3">
+                            <i class="material-icons md-36 md-light md-thick">vpn_key</i>
+                            <span>change password</span>
+                        </button>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary py-0 px-3">
+                            <i class="material-icons md-36 md-light md-thick">check</i>
+                            <span>save</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/tether/tether.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
