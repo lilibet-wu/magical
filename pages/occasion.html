@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>Magical Occasion Edit</title>
+</head>
+<body class="magicalBody">
+    <div class="close-icon">
+        <i class="material-icons md-36 md-dark">clear</i>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h1>occasion edit</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                <div class="card p-5">
+                    <img class="card-img" src="../asserts/images/occasion-icon.png">
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center mt-3">
+                        <button type="button" class="btn btn-primary py-0 px-3">
+                            <i class="material-icons md-36 md-light md-thick">content_copy</i>
+                            <span>copy</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                <form id="profileFormId">
+                    <div class="form-group input-group-lg">
+                        <input type="text" class="form-control rounded" id="occasionNameId" aria-describedby="occasion name" required>
+                        <label for="occasionNameId">occasion name</label>
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <select class="form-control custom-select rounded" id="forPersonId">
+                            <option>lorem.ipsum</option>
+                            <option>lorem2.ipsum</option>
+                            <option>lorem3.ipsum</option>
+                        </select>
+                        <label for="forPersonId">for</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-4 input-group-lg pr-0">
+                                <select class="form-control custom-select rounded" id="birthdayDayId">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <label class="ml-3" for="birthdayDayId" ">birthday day</label>
+                            </div>
+                            <div class="col-4 input-group-lg pr-0">
+                                <select class="form-control custom-select rounded" id="birthdayMonthId">
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                </select>
+                                <label class="ml-3" for="birthdayMonthId">birthday month</label>
+                            </div>
+                            <div class="col-4 input-group-lg">
+                                <select class="form-control custom-select rounded" id="birthdayYearId">
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                </select>
+                                <label class="ml-3" for="birthdayYearId">birthday month</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <select class="form-control custom-select rounded" id="inviteesId">
+                            <option>johnnym samatha and 5 others</option>
+                        </select>
+                        <label for="inviteesId">invitees</label>
+                    </div>
+                    <div class="form-group card">
+                        <div class="form-check pl-1 mb-0">
+                            <div class="checkbox-label">reminder</div>
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="remindMe">
+                                remind me 2 weeks before
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <div class="info-block">
+                    <div class="col-4 d-flex flex-column public-profile">
+                        <i class="material-icons md-24 md-dark md-center">lock</i>
+                        <div>friends</div>
+                    </div>
+                    <div class="col-8 d-flex justify-content-end social-media-link">
+                        <a class="mx-3" target="_blank" title="find us on Facebook" href="http://www.facebook.com/PLACEHOLDER">
+                            <img alt="follow me on facebook" src="../asserts/images/square-facebook.png" border=0>
+                        </a>
+                        <a class="mx-3" target="_blank" title="follow me on twitter" href="http://www.twitter.com/PLACEHOLDER">
+                            <img alt="follow me on twitter" src="../asserts/images/square-twitter.png" border=0>
+                        </a>
+                        <a class="ml-3" target="_blank" title="follow me on google plus" href="http://www.google.com/PLACEHOLDER">
+                            <img alt="follow me on google plus" src="../asserts/images/square-google-plus.png" border=0>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-start">
+                        <button type="button" class="btn btn-primary py-0 px-3">
+                            <i class="material-icons md-36 md-light md-thick">delete</i>
+                            <span>delete</span>
+                        </button>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary py-0 px-3">
+                            <i class="material-icons md-36 md-light md-thick">check</i>
+                            <span>save</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/tether/tether.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

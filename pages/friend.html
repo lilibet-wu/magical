@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>Magical Friend Edit</title>
+</head>
+<body class="magicalBody">
+    <div class="close-icon">
+        <i class="material-icons md-36 md-dark">clear</i>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h1>friend edit</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                <div class="card p-5">
+                    <img class="card-img" src="../asserts/images/profile-icon.png">
+                </div>
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-start mt-3">
+                        <button type="button" class="btn btn-primary py-0 px-3">
+                            <i class="material-icons md-36 md-light md-thick">mail_outline</i>
+                            <span>invite</span>
+                        </button>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <div>
+                            <div class="friend-username">
+                                Username
+                            </div>
+                            <div>
+                                tagline
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                <form id="profileFormId">
+                    <div class="form-group input-group-lg">
+                        <input type="text" class="form-control rounded" id="friendNameId" aria-describedby="friend name" required>
+                        <label for="friendNameId">name</label>
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <input type="text" class="form-control rounded" id="friendEmailId" aria-describedby="friend email" required>
+                        <label for="friendEmailId">name</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6 input-group-lg pr-0">
+                                <select class="form-control custom-select rounded" id="birthdayDayId">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <label for="birthdayDayId">birthday day</label>
+                            </div>
+                            <div class="col-6 input-group-lg">
+                                <select class="form-control custom-select rounded" id="birthdayMonthId">
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                </select>
+                                <label for="birthdayMonthId">birthday month</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <select class="form-control custom-select rounded" id="groupsId">
+                            <option>family, friends</option>
+                        </select>
+                        <label for="groupsId">groups</label>
+                    </div>
+                    <div class="form-group card">
+                        <div class="form-check form-check-inline pl-1 mb-0">
+                            <div class="checkbox-label">notifications</div>
+                            <div class="row mt-2">
+                                <div class="col-7">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="addItemForMe">
+                                        adds item for me
+                                    </label>
+                                </div>
+                                <div class="col-5">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="addItem">
+                                        adds item
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-7">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="addReviewForMe">
+                                        adds review for my item
+                                    </label>
+                                </div>
+                                <div class="col-5">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="addReview">
+                                        adds review
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-start">
+                        <button type="button" class="btn btn-primary py-0 px-3">
+                            <i class="material-icons md-36 md-light md-thick">delete</i>
+                            <span>delete</span>
+                        </button>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary py-0 px-3">
+                            <i class="material-icons md-36 md-light md-thick">check</i>
+                            <span>save</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/tether/tether.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

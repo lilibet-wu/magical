@@ -34,6 +34,14 @@
     margin-bottom: 0;
 }
 
+.magicalBody form .form-check-label {
+    font-size: 24px;
+}
+
+.magicalBody form .form-check .checkbox-label {
+    color: #ACACAC;
+    font-size: 12px;
+}
 .magicalBody .close-icon{
     position: absolute;
     right: 24px;
@@ -64,4 +72,20 @@
 }
 .magicalBody .card-img {
     width: 100%;
+}
+.magicalBody .application-title {
+    font-size: 12px;
+    color: #ACACAC;
+}
+.magicalBody .application-image-block img{
+    width: 64px;
+    height: 64px;
+}
+.magicalBody .application-image-block,
+.magicalBody .application-image-block div{
+    text-align: center;
+}
+
+.magicalBody .friend-username {
+    font-size: 24px;
 }
