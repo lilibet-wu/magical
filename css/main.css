@@ -1,3 +1,6 @@
+.magicalBody .hidden {
+    display: none;
+}
 .magicalBody form .form-group{
     position: relative;
 }
@@ -88,4 +91,33 @@
 
 .magicalBody .friend-username {
     font-size: 24px;
+}
+.magicalBody.notifications .checkbox-label{
+    font-size: 12px;
+    color: #ACACAC;
+}
+.magicalBody.notifications .nav-tabs{
+    background-color: #CACACA;
+    border-bottom: none;
+}
+.magicalBody.notifications .nav-tabs .nav-link {
+    border: none;
+    color: black;
+    padding: 0 40px;
+    margin: 10px 20px;
+}
+.magicalBody.notifications .nav-tabs .nav-link.active {
+    border: none;
+    background: none;
+    border-bottom: 2px solid #464a4c;
+}
+.magicalBody.notifications .form-check-label {
+    font-size: 18px;
+}
+.magicalBody.notifications .notification-save {
+    padding: 15px;
+}
+.magicalBody.notifications .notification-save button{
+    position: absolute;
+    bottom: 0;
 }

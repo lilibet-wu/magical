@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>Magical Notifications</title>
+</head>
+<body class="magicalBody notifications">
+    <div class="close-icon">
+        <i class="material-icons md-36 md-dark">clear</i>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h1>notifications</h1>
+            </div>
+        </div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="notificationTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#email" role="tab">Email</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#mobile" role="tab">Mobile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#desktop" role="tab">Desktop</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="email" role="tabpanel">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-1">
+                        <div class="card my-2">
+                            <div class="form-check pl-1">
+                                <div class="checkbox-label">events</div>
+                                <div class="my-2">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="event1">
+                                        important occasions
+                                    </label>
+                                </div>
+                                <div class="my-2">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="event2">
+                                        other occasions
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card my-2">
+                            <div class="form-check pl-1">
+                                <div class="checkbox-label">items</div>
+                                <div class="my-2">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="items1">
+                                        import items
+                                    </label>
+                                </div>
+                                <div class="my-2">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="items2">
+                                        friends add an item for me
+                                    </label>
+                                </div>
+                                <div class="my-2">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="items3">
+                                        friends add an item
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card my-2">
+                            <div class="form-check pl-1">
+                                <div class="checkbox-label">reviews</div>
+                                <div class="my-2">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="review1">
+                                        friends add a review
+                                    </label>
+                                </div>
+                                <div class="my-2">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="review2">
+                                        friends add a review for me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 justify-content-end my-2 notification-save">
+                        <button type="button" class="btn btn-primary py-0 px-3">
+                            <i class="material-icons md-36 md-light md-thick">check</i>
+                            <span>save</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="mobile" role="tabpanel">tab2</div>
+            <div class="tab-pane fade" id="desktop" role="tabpanel">tab3</div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/tether/tether.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script>
+        $('#notificationTabs a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+        $('#notificationTabs a:first').tab('show');
+    </script>
+</body>
+</html>
