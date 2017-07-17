@@ -53,6 +53,12 @@
     height: 36px;
     border-radius: 5px;
 }
+.magicalBody .align-to-center {
+    text-align: center;
+}
+.magicalBody .align-to-right {
+    text-align: right;
+}
 .magicalBody .info-block {
     border: 1px solid rgba(0,0,0,0.15);
     border-radius: 4.8px;
@@ -120,4 +126,12 @@
 .magicalBody.notifications .notification-save button{
     position: absolute;
     bottom: 0;
+}
+.magicalBody .icon-wrapper {
+    font-size: 24px;
+    line-height: 0.5;
+}
+.magicalBody .icon-wrapper span{
+    position: absolute;
+    top: 15px;
 }

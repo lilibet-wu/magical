@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>Magical Item View</title>
+</head>
+<body class="magicalBody itemView">
+    <div class="close-icon">
+        <i class="material-icons md-36 md-dark">clear</i>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h1>item view</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                <div class="card p-2">
+                    <img class="card-img card rounded-0" src="../asserts/images/item-icon.png">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-between mt-3 mb-1">
+                            <div class="align-self-center col-3 icon-wrapper">
+                                <i class="material-icons md-48 md-dark md-center">favorite</i>
+                                <span>100</span>
+                            </div>
+                            <div class="col-3 align-to-center icon-wrapper">
+                                <i class="material-icons md-48 md-dark md-center">check_circle</i>
+                                <div>got</div>
+                            </div>
+                            <div class="col-3 align-to-center icon-wrapper">
+                                <i class="material-icons md-48 md-dark md-center">person_add</i>
+                                <div>add</div>
+                            </div>
+                            <div class="col-3 align-to-center icon-wrapper">
+                                <i class="material-icons md-48 md-dark md-center">web</i>
+                                <div>visit</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                <form id="profileFormId">
+                    <div class="form-group input-group-lg">
+                        <input type="text" class="form-control rounded" id="itemNameId" aria-describedby="item name" required>
+                        <label for="itemNameId">item name</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6 input-group-lg pr-0">
+                                <input type="text" class="form-control rounded" id="itemQuantityId" aria-describedby="item quantity" required>
+                                <label for="itemQuantityId">Quantity</label>
+                            </div>
+                            <div class="col-6 input-group-lg">
+                                <input type="text" class="form-control rounded" id="itemPriceId" aria-describedby="item price" required>
+                                <label for="itemPriceId">Price</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <input type="text" class="form-control rounded" id="itemFriendId" aria-describedby="friends" required>
+                        <label for="itemFriendId">Friends</label>
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <input type="text" class="form-control rounded" id="itemOccasionsId" aria-describedby="occasions" required>
+                        <label for="itemOccasionsId">Occasions</label>
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <textarea class="form-control rounded" id="itemDescriptionId" rows="11"></textarea>
+                        <label for="itemDescriptionId">description</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-block d-flex p-2">
+                        <h4 class="col-4 px-0 mt-1">17 reviews and comments</h4>
+                        <div class="col-2">
+                            <select class="form-control custom-select" id="sortRating">
+                                <option>rating</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-control custom-select" id="sortDate">
+                                <option>most recent first</option>
+                            </select>
+                        </div>
+                        <div class="col-2 flex-row-reverse d-flex">
+                            <i class="material-icons md-36 md-dark md-center">add_box</i>
+                            <span class="align-self-center">add</span>
+                        </div>
+                    </div>
+                    <div class="card m-2">
+                        <div class="d-flex">
+                            <i class="material-icons md-36 md-dark md-center">person</i>
+                            <h5 class="px-1 mt-2">Lorem ipsum</h5>
+                            <h5 class="px-1 mt-2"> 7 days ago</h5>
+                        </div>
+                        <div class="review-content px-2">
+                            Lorem ipsum dolor sit amet, vel ea scripta maluisset, vitae moderatius ius ne. No omnium minimum usu. Vel ei mazim utinam admodum, quaeque euismod vulputate no vim, et aliquip dolorum vim. Corrumpit aliquando consectetuer pro an, iriure labores at vis, democritum voluptatibus quo te. Et ludus eripuit oportere vis. Quem habemus ex ius, vim aliquip instructior in.
+
+                            Per et viderer placerat similique, no possim assentior disputationi vel. Cu vis zril oblique mediocritatem, ex eam brute epicuri dissentiet. At mea fabellas legendos. Probo nullam essent cu duo. Eirmod perpetua eloquentiam an vix.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/tether/tether.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
