@@ -56,6 +56,11 @@
     font-size: 12px;
     margin-bottom: 0;
 }
+.magicalBody .buttonStyle:hover,
+.magicalBody button:hover,
+.magicalBody .material-icons:hover{
+    cursor: pointer;
+}
 .magicalBody .close-icon{
     position: absolute;
     right: 24px;
@@ -150,28 +155,33 @@
     position: absolute;
     top: 15px;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-    .magicalBody.itemView .textArea {
-        height: 262px;
-    }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-    .magicalBody.itemView .textArea {
-        height: 142px;
-    }
-}
 @media (min-width: 1200px) {
     .magicalBody.itemDetails .textArea {
         height: 486px;
     }
+    .magicalBody.itemEdit .textArea {
+        height: 196px;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+    .magicalBody.itemView .textArea {
+        height: 262px;
+    }
     .magicalBody.itemDetails .textArea {
         height: 396px;
+    }
+    .magicalBody.itemEdit .textArea {
+        height: 106px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .magicalBody.itemDetails .textArea {
         height: 276px;
+    }
+    .magicalBody.itemView .textArea {
+        height: 142px;
+    }
+    .magicalBody.itemEdit .textArea {
+        height: 86px;
     }
 }
