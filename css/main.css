@@ -10,6 +10,10 @@
     padding: 18px 12px 1px 4px;
     font-size: 24px;
 }
+.magicalBody form .input-group-lg input.disabled,
+.magicalBody form .input-group-lg textarea.disabled  {
+    background-color: #FFFFFF;
+}
 .magicalBody form .input-group-lg label {
     position: absolute;
     margin: 0;
@@ -30,7 +34,8 @@
 .magicalBody form .input-group-lg input:focus + label,
 .magicalBody form .input-group-lg input:valid + label,
 .magicalBody form .input-group-lg select + label,
-.magicalBody form .input-group-lg textarea + label{
+.magicalBody form .input-group-lg textarea + label,
+.magicalBody form .input-group-lg input.disabled + label{
     top: -16px;
     height: 12px;
     font-size: 12px;
@@ -45,6 +50,12 @@
     color: #ACACAC;
     font-size: 12px;
 }
+.magicalBody form .input-group-lg label.multiselect-label {
+    top: -16px;
+    height: 12px;
+    font-size: 12px;
+    margin-bottom: 0;
+}
 .magicalBody .close-icon{
     position: absolute;
     right: 24px;
@@ -58,6 +69,10 @@
 }
 .magicalBody .align-to-right {
     text-align: right;
+}
+.magicalBody .rounded-border{
+    border-radius: 4.8px;
+    border: 1px solid rgba(0,0,0,0.15);
 }
 .magicalBody .info-block {
     border: 1px solid rgba(0,0,0,0.15);
@@ -134,4 +149,29 @@
 .magicalBody .icon-wrapper span{
     position: absolute;
     top: 15px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .magicalBody.itemView .textArea {
+        height: 262px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .magicalBody.itemView .textArea {
+        height: 142px;
+    }
+}
+@media (min-width: 1200px) {
+    .magicalBody.itemDetails .textArea {
+        height: 486px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .magicalBody.itemDetails .textArea {
+        height: 396px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .magicalBody.itemDetails .textArea {
+        height: 276px;
+    }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/multi-selection/bootstrap-multiselect.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/icon.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -56,7 +57,11 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col-6 input-group-lg pr-0">
-                                <input type="text" class="form-control rounded" id="itemQuantityId" aria-describedby="item quantity" required>
+                                <select class="form-control custom-select rounded" id="itemQuantityId">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
                                 <label for="itemQuantityId">Quantity</label>
                             </div>
                             <div class="col-6 input-group-lg">
@@ -66,15 +71,23 @@
                         </div>
                     </div>
                     <div class="form-group input-group-lg">
-                        <input type="text" class="form-control rounded" id="itemFriendId" aria-describedby="friends" required>
-                        <label for="itemFriendId">Friends</label>
+                        <select class="form-control custom-select rounded" id="itemFriendId" multiple>
+                            <option value="john">john</option>
+                            <option value="mandy">mandy</option>
+                            <option value="andy">andy</option>
+                        </select>
+                        <label class="multiselect-label" for="itemFriendId">Friends</label>
                     </div>
                     <div class="form-group input-group-lg">
-                        <input type="text" class="form-control rounded" id="itemOccasionsId" aria-describedby="occasions" required>
-                        <label for="itemOccasionsId">Occasions</label>
+                        <select class="form-control custom-select rounded" id="itemOccasionsId" multiple>
+                            <option value="john">john's Birthday</option>
+                            <option value="mandy">mandy's Birthday</option>
+                            <option value="anniversary">anniversary</option>
+                        </select>
+                        <label class="multiselect-label" for="itemOccasionsId">Occasions</label>
                     </div>
                     <div class="form-group input-group-lg">
-                        <textarea class="form-control rounded" id="itemDescriptionId" rows="11"></textarea>
+                        <textarea class="form-control rounded textArea" id="itemDescriptionId" rows="11"></textarea>
                         <label for="itemDescriptionId">description</label>
                     </div>
                 </form>
@@ -83,33 +96,52 @@
         <div class="row my-3">
             <div class="col-12">
                 <div class="card">
-                    <div class="card-block d-flex p-2">
-                        <h4 class="col-4 px-0 mt-1">17 reviews and comments</h4>
-                        <div class="col-2">
+                    <div class="row p-2">
+                        <h4 class="col-lg-4 col-md-12 col-sm-12 px-3 mt-1">17 reviews and comments</h4>
+                        <div class="col-lg-2 col-md-4 col-sm-5">
                             <select class="form-control custom-select" id="sortRating">
                                 <option>rating</option>
                             </select>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-5 col-sm-7">
                             <select class="form-control custom-select" id="sortDate">
                                 <option>most recent first</option>
                             </select>
                         </div>
-                        <div class="col-2 flex-row-reverse d-flex">
+                        <div class="col-lg-2 col-md-3 col-sm-12 flex-row-reverse d-flex">
                             <i class="material-icons md-36 md-dark md-center">add_box</i>
                             <span class="align-self-center">add</span>
                         </div>
                     </div>
                     <div class="card m-2">
-                        <div class="d-flex">
-                            <i class="material-icons md-36 md-dark md-center">person</i>
-                            <h5 class="px-1 mt-2">Lorem ipsum</h5>
-                            <h5 class="px-1 mt-2"> 7 days ago</h5>
+                        <div class="row">
+                            <div class="col-lg-9 col-md-8 col-sm-12 d-flex">
+                                <i class="material-icons md-36 md-dark md-center">person</i>
+                                <h5 class="px-1 mt-2">Lorem ipsum</h5>
+                                <h5 class="px-4 mt-2"> 7 days ago</h5>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12 d-flex justify-content-end pr-4">
+                                <i class="material-icons md-36 md-dark md-center">star</i>
+                                <i class="material-icons md-36 md-dark md-center">star</i>
+                                <i class="material-icons md-36 md-dark md-center">star</i>
+                                <i class="material-icons md-36 md-dark md-center">star_half</i>
+                                <i class="material-icons md-36 md-dark md-center">star_border</i>
+                            </div>
                         </div>
-                        <div class="review-content px-2">
-                            Lorem ipsum dolor sit amet, vel ea scripta maluisset, vitae moderatius ius ne. No omnium minimum usu. Vel ei mazim utinam admodum, quaeque euismod vulputate no vim, et aliquip dolorum vim. Corrumpit aliquando consectetuer pro an, iriure labores at vis, democritum voluptatibus quo te. Et ludus eripuit oportere vis. Quem habemus ex ius, vim aliquip instructior in.
+                        <div class="row">
+                            <div class="col-12 review-content px-4">
+                                Lorem ipsum dolor sit amet, vel ea scripta maluisset, vitae moderatius ius ne. No omnium minimum usu. Vel ei mazim utinam admodum, quaeque euismod vulputate no vim, et aliquip dolorum vim. Corrumpit aliquando consectetuer pro an, iriure labores at vis, democritum voluptatibus quo te. Et ludus eripuit oportere vis. Quem habemus ex ius, vim aliquip instructior in.
 
-                            Per et viderer placerat similique, no possim assentior disputationi vel. Cu vis zril oblique mediocritatem, ex eam brute epicuri dissentiet. At mea fabellas legendos. Probo nullam essent cu duo. Eirmod perpetua eloquentiam an vix.
+                                Per et viderer placerat similique, no possim assentior disputationi vel. Cu vis zril oblique mediocritatem, ex eam brute epicuri dissentiet. At mea fabellas legendos. Probo nullam essent cu duo. Eirmod perpetua eloquentiam an vix.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end pr-4">
+                                <i class="material-icons md-24 md-dark md-center rounded-border m-1">thumb_up</i>
+                                <span class="m-1 pr-2">0</span>
+                                <i class="material-icons md-24 md-dark md-center rounded-border m-1">thumb_down</i>
+                                <span class="m-1">1</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,5 +151,18 @@
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/tether/tether.min.js"></script>
     <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../plugins/multi-selection/bootstrap-multiselect.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#itemFriendId').multiselect({
+                buttonWidth: '100%',
+                buttonClass: 'form-control custom-select'
+            });
+            $('#itemOccasionsId').multiselect({
+                buttonWidth: '100%',
+                buttonClass: 'form-control custom-select'
+            });
+        });
+    </script>
 </body>
 </html>
