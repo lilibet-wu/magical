@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/multi-selection/bootstrap-multiselect.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>Magical Item Edit</title>
+</head>
+<body class="magicalBody itemEdit">
+    <div class="close-icon">
+        <i class="material-icons md-36 md-dark">clear</i>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h1>item edit</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                <div class="card p-2">
+                    <img class="card-img card rounded-0" src="../asserts/images/item-icon.png">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-between mt-3 mb-1">
+                            <div class="align-self-center col-3 icon-wrapper">
+                                <i class="material-icons md-36 md-dark md-center">favorite_border</i>
+                                <span>99</span>
+                            </div>
+                            <div class="col-3 align-to-center icon-wrapper">
+                            </div>
+                            <div class="col-3 align-to-center icon-wrapper">
+                                <i class="material-icons md-36 md-dark md-center">person_add</i>
+                                <div>add</div>
+                            </div>
+                            <div class="col-3 align-to-center icon-wrapper">
+                                <i class="material-icons md-36 md-dark md-center">web</i>
+                                <div>visit</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                <form id="profileFormId">
+                    <div class="form-group input-group-lg">
+                        <input type="text" class="form-control rounded" id="itemNameId" aria-describedby="item name" required value="this is the item name">
+                        <label for="itemNameId">item name</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6 input-group-lg pr-0">
+                                <select class="form-control custom-select rounded" id="itemQuantityId">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <label for="itemQuantityId">Quantity</label>
+                            </div>
+                            <div class="col-6 input-group-lg">
+                                <input type="text" class="form-control rounded" id="itemPriceId" aria-describedby="item price" required>
+                                <label for="itemPriceId">Price</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <select class="form-control custom-select rounded" id="itemFriendId" multiple>
+                            <option value="john">john</option>
+                            <option value="mandy">mandy</option>
+                            <option value="andy">andy</option>
+                        </select>
+                        <label class="multiselect-label" for="itemFriendId">Friends</label>
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <select class="form-control custom-select rounded" id="itemOccasionsId" multiple>
+                            <option value="john">john's Birthday</option>
+                            <option value="mandy">mandy's Birthday</option>
+                            <option value="anniversary">anniversary</option>
+                        </select>
+                        <label class="multiselect-label" for="itemOccasionsId">Occasions</label>
+                    </div>
+                    <div class="form-group input-group-lg">
+                        <textarea class="form-control rounded textArea" id="itemDescriptionId" rows="5"></textarea>
+                        <label for="itemDescriptionId">description</label>
+                    </div>
+                </form>
+                <div class="info-block">
+                    <div class="col-2 d-flex flex-column">
+                        <i class="material-icons md-36 md-dark md-center">check_circle</i>
+                        <div class="align-to-center">got</div>
+                    </div>
+                    <div class="col-2 d-flex flex-column">
+                        <i class="material-icons md-36 md-dark md-center">assignment_ind</i>
+                        <div class="align-to-center">privacy</div>
+                    </div>
+                    <div class="col-8 d-flex justify-content-end social-media-link">
+                        <a class="mx-2" target="_blank" title="find us on Facebook" href="http://www.facebook.com/PLACEHOLDER">
+                            <img alt="follow me on facebook" src="../asserts/images/square-facebook.png" border=0>
+                        </a>
+                        <a class="mx-2" target="_blank" title="follow me on twitter" href="http://www.twitter.com/PLACEHOLDER">
+                            <img alt="follow me on twitter" src="../asserts/images/square-twitter.png" border=0>
+                        </a>
+                        <a class="ml-2" target="_blank" title="follow me on google plus" href="http://www.google.com/PLACEHOLDER">
+                            <img alt="follow me on twitter" src="../asserts/images/square-google-plus.png" border=0>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8 d-flex justify-content-start">
+                        <button type="button" class="btn btn-primary py-0 px-3">
+                            <i class="material-icons md-36 md-light md-thick">delete</i>
+                            <span>delete</span>
+                        </button>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary py-0 px-3">
+                            <i class="material-icons md-36 md-light md-thick">check</i>
+                            <span>save</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="row p-2">
+                        <h4 class="col-lg-4 col-md-12 col-sm-12 px-3 mt-1">17 reviews and comments</h4>
+                        <div class="col-lg-2 col-md-4 col-sm-5">
+                            <select class="form-control custom-select" id="sortRating">
+                                <option>rating</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-md-5 col-sm-7">
+                            <select class="form-control custom-select" id="sortDate">
+                                <option>most recent first</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="card m-2">
+                        <div class="m-2">
+                            <form class="col-12 px-0" id="reviewEditFormId">
+                                <textarea class="form-control my-0" id="reviewEditId" rows="5">
+this is a review of the item
+
+and some more text here
+
+                                </textarea>
+                            </form>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 col-sm-12 d-flex">
+                                    <i class="material-icons md-36 md-dark md-center">star</i>
+                                    <i class="material-icons md-36 md-dark md-center">star</i>
+                                    <i class="material-icons md-36 md-dark md-center">star</i>
+                                    <i class="material-icons md-36 md-dark md-center">star_half</i>
+                                    <i class="material-icons md-36 md-dark md-center">star_border</i>
+                                </div>
+                                <div class="col-lg-9 col-md-8 col-sm-12 pt-2 d-flex justify-content-end">
+                                    <i class="material-icons md-36 md-dark md-center">delete</i>
+                                    <span class="m-1 pr-4">delete</span>
+                                    <i class="material-icons md-36 md-dark md-center">close</i>
+                                    <span class="m-1 pr-4">cancel</span>
+                                    <i class="material-icons md-36 md-dark md-center">check</i>
+                                    <span class="m-1">save</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/tether/tether.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../plugins/multi-selection/bootstrap-multiselect.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#itemFriendId').multiselect({
+                buttonWidth: '100%',
+                buttonClass: 'form-control custom-select'
+            });
+            $('#itemOccasionsId').multiselect({
+                buttonWidth: '100%',
+                buttonClass: 'form-control custom-select'
+            });
+        });
+    </script>
+</body>
+</html>
