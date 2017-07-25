@@ -92,6 +92,9 @@
 .magicalBody button.btn {
     height: 38px;
 }
+.magicalBody button.btn.btn-small {
+    height: 30px;
+}
 .magicalBody .btn span{
     position: relative;
     top: -12px;
@@ -155,6 +158,11 @@
     position: absolute;
     top: 15px;
 }
+.magicalBody .listScrollContainer {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 600px;
+}
 @media (min-width: 1200px) {
     .magicalBody.itemDetails .textArea {
         height: 486px;
@@ -183,5 +191,8 @@
     }
     .magicalBody.itemEdit .textArea {
         height: 86px;
+    }
+    .magicalBody .listScrollContainer {
+        max-height: 400px;
     }
 }
