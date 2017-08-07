@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/multi-selection/bootstrap-multiselect.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/icon.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -78,10 +79,13 @@
                         </div>
                     </div>
                     <div class="form-group input-group-lg">
-                        <select class="form-control custom-select rounded" id="inviteesId">
-                            <option>johnnym samatha and 5 others</option>
+                        <select class="form-control custom-select rounded" id="inviteesId" multiple>
+                            <option>johnnym</option>
+                            <option>samatha</option>
+                            <option>peter</option>
+                            <option>andrew</option>
                         </select>
-                        <label for="inviteesId">invitees</label>
+                        <label class="multiselect-label" for="inviteesId">invitees</label>
                     </div>
                     <div class="form-group card">
                         <div class="form-check pl-1 mb-0">
@@ -130,5 +134,14 @@
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/tether/tether.min.js"></script>
     <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../plugins/multi-selection/bootstrap-multiselect.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#inviteesId').multiselect({
+                buttonWidth: '100%',
+                buttonClass: 'form-control custom-select'
+            });
+        });
+    </script>
 </body>
 </html>
