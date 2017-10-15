@@ -167,16 +167,18 @@
     overflow-y: auto;
     max-height: 600px;
 }
-.magicalBody.landingPage .landing-block{
+.magicalBody .landing-block{
     width: 100%;
+    border-bottom: 2px solid darkgray;
+    padding-bottom: 12px;
 }
-.magicalBody.landingPage .btn span {
+.magicalBody .landing-block .btn span {
     top: 0px;
 }
-.magicalBody.landingPage h1{
+.magicalBody .landing-block h1{
     font-size: 72px;
 }
-.magicalBody.landingPage .follower-block {
+.magicalBody .landing-block .follower-block {
     border: 1px solid darkgray;
     border-bottom: none;
     font-size: 24px;
@@ -184,14 +186,22 @@
     display: inline-flex;
     line-height: 48px;
 }
-.magicalBody.landingPage .follower-block span{
+.magicalBody .landing-block .follower-block span{
     padding-left: 20px;
 }
-.magicalBody.landingPage .follower-block:last-child {
+.magicalBody .landing-block .follower-block:last-child {
     border-bottom: 1px solid darkgray;
 }
-.magicalBody.landingPage .button-container {
+.magicalBody .landing-block .button-container {
     text-align: right;
+}
+.magicalBody .landing-block .profile-img {
+    width: 100px;
+    margin-top: -24px;
+}
+.magicalBody .landing-block .profile-name {
+    font-size: 28px;
+    font-weight: 400;
 }
 @media (min-width: 1200px) {
     .magicalBody.itemDetails .textArea {
@@ -200,11 +210,11 @@
     .magicalBody.itemEdit .textArea {
         height: 196px;
     }
-    .magicalBody.landingPage .follower-block {
+    .magicalBody .landing-block .follower-block {
         border-bottom: 1px solid darkgray;
         border-right: none;
     }
-    .magicalBody.landingPage .follower-block:last-child {
+    .magicalBody .landing-block .follower-block:last-child {
         border-right: 1px solid darkgray;
     }
 }
@@ -221,11 +231,11 @@
     .magicalBody.preferences .preferenceList{
         height: 383px
     }
-    .magicalBody.landingPage .follower-block {
+    .magicalBody .landing-block .follower-block {
         border-bottom: 1px solid darkgray;
         border-right: none;
     }
-    .magicalBody.landingPage .follower-block:last-child {
+    .magicalBody .landing-block .follower-block:last-child {
         border-right: 1px solid darkgray;
     }
 }
@@ -245,19 +255,19 @@
     .magicalBody.preferences .preferenceList{
         height: 263px
     }
-    .magicalBody.landingPage .follower-block:nth-child(1) {
+    .magicalBody .landing-block .follower-block:nth-child(1) {
         border-bottom: none;
         border-right: none;
     }
-    .magicalBody.landingPage .follower-block:nth-child(2) {
+    .magicalBody .landing-block .follower-block:nth-child(2) {
         border-right: 1px solid darkgray;
         border-bottom: none;
     }
-    .magicalBody.landingPage .follower-block:nth-child(3) {
+    .magicalBody .landing-block .follower-block:nth-child(3) {
         border-bottom: 1px solid darkgray;
         border-right: none;
     }
-    .magicalBody.landingPage .follower-block:nth-child(4) {
+    .magicalBody .landing-block .follower-block:nth-child(4) {
         border-right: 1px solid darkgray;
         border-bottom: 1px solid darkgray;
     }
