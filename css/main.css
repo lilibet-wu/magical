@@ -171,6 +171,7 @@
     width: 100%;
     border-bottom: 2px solid darkgray;
     padding-bottom: 12px;
+    background-color: #eceeef;
 }
 .magicalBody .landing-block .btn span {
     top: 0px;
@@ -185,6 +186,7 @@
     font-weight: 400;
     display: inline-flex;
     line-height: 48px;
+    background-color: white;
 }
 .magicalBody .landing-block .follower-block span{
     padding-left: 20px;
