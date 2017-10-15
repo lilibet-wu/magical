@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/multi-selection/bootstrap-multiselect.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>Magical</title>
+</head>
+<body class="magicalBody landingPage">
+    <div class="landing-block">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-sm-12 pr-3">
+                    <h1 class="mb-2">magical</h1>
+                    <h5 class="mb-3">join the workds most accourate recommendation engine and bring the magic back to gift giving</h5>
+                    <p>(as measured by the delight your gift brings and the size of their smile)</p>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 button-container">
+                    <button type="button" class="btn btn-primary py-0 px-3 mx-2">
+                        <span>sign in</span>
+                    </button>
+                    <button type="button" class="btn btn-primary py-0 px-3  mx-2">
+                        <span>join us</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row mx-0 mt-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12 p-2 follower-block">
+                        <i class="material-icons md-48 md-dark md-center">mood</i>
+                        <span>famous person</span>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 p-2 follower-block">
+                        <i class="material-icons md-48 md-dark md-center">mood</i>
+                        <span>famous person</span>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 p-2 follower-block">
+                        <i class="material-icons md-48 md-dark md-center">mood</i>
+                        <span>famous person</span>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 p-2 follower-block">
+                        <i class="material-icons md-48 md-dark md-center">mood</i>
+                        <span>famous person</span>
+                    </div>
+            </div>
+        </div>
+    </div>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/tether/tether.min.js"></script>
+<script src="../js/bootstrap/bootstrap.min.js"></script>
+<script src="../plugins/multi-selection/bootstrap-multiselect.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#itemFriendId').multiselect({
+            buttonWidth: '100%',
+            buttonClass: 'form-control custom-select'
+        });
+        $('#itemOccasionsId').multiselect({
+            buttonWidth: '100%',
+            buttonClass: 'form-control custom-select'
+        });
+    });
+</script>
+</body>
+</html>
