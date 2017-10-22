@@ -1,6 +1,26 @@
 .magicalBody .hidden {
     display: none;
 }
+.magicalBody .sticky-header{
+    position: absolute;
+    top: 0;
+    height: 48px;
+    width: 100%;
+    border-bottom: 1px solid darkgray;
+    background-color: lightgray;
+    padding: 8px 24px;
+    line-height: 32px;
+}
+
+.magicalBody .sticky-header .site-name{
+    font-size: 28px;
+    line-height: 32px;
+    vertical-align: top;
+}
+
+.magicalBody .sticky-header button.btn{
+    height: 32px;
+}
 .magicalBody form .form-group{
     position: relative;
 }
@@ -172,6 +192,7 @@
     border-bottom: 2px solid darkgray;
     padding-bottom: 12px;
     background-color: #eceeef;
+    margin-top: 48px;
 }
 .magicalBody .landing-block .btn span {
     top: 0px;
@@ -204,6 +225,23 @@
 .magicalBody .landing-block .profile-name {
     font-size: 28px;
     font-weight: 400;
+}
+.magicalBody .intro-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 24px;
+    color: white;
+}
+
+.magicalBody .intro-overlay i.account-icon{
+    font-size: 160px;
+}
+.magicalBody .intro-overlay button.btn{
+    height: 32px;
 }
 @media (min-width: 1200px) {
     .magicalBody.itemDetails .textArea {

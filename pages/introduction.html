@@ -65,8 +65,48 @@
             </div>
         </div>
     </div>
+    <div class="intro-overlay">
+        <div class="row">
+            <div class="col-6 text-right">
+                <i id="close-overlay-icon" class="material-icons md-light md-36 md-thick">close</i>
+            </div>
+            <div class="col-6 text-right button-container">
+                <button type="button" class="btn btn-primary px-3 mx-2">
+                    <span>sign in</span>
+                </button>
+                <button type="button" class="btn btn-primary px-3  mx-2">
+                    <span>join us</span>
+                </button>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-6 pl-5">
+                <h1 class="">magical</h1>
+                <h5>the world's most accurate recommendation engine brings the magic back to gift giving. </h5>
+            </div>
+            <div class="col-6 p-5">
+                <h3>join magical now</h3>
+            </div>
+        </div>
+        <div class="row m-4">
+            <div class="col-lg-2 col-md-3 col-sm-12 text-center">
+                <i class="material-icons md-light md-48 md-thick account-icon">account_circle</i>
+                <span>follower name</span>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 py-3">
+                <h4>&lt;insertfollowername&gt; has all their exciting products on magical so you use magical to
+                    tell your friends about the great item you like</h4>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-12">&nbsp;</div>
+        </div>
+    </div>
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/tether/tether.min.js"></script>
 <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $('#close-overlay-icon').click(function() {
+            $('.intro-overlay').fadeOut( "slow" );
+        });
+    </script>
 </body>
 </html>
