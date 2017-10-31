@@ -230,8 +230,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    bottom: 0;
+    right: 0;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px 24px;
     color: white;
@@ -242,6 +242,12 @@
 }
 .magicalBody .intro-overlay button.btn{
     height: 32px;
+}
+.magicalBody .intro-overlay img.point-arrow{
+    width: 90%;
+}
+.magicalBody .intro-overlay div.join-text {
+    padding: 15px 15px 0 15px;
 }
 @media (min-width: 1200px) {
     .magicalBody.itemDetails .textArea {
@@ -256,6 +262,9 @@
     }
     .magicalBody .landing-block .follower-block:last-child {
         border-right: 1px solid darkgray;
+    }
+    .magicalBody .intro-overlay div.join-text {
+        padding: 108px 15px 0 15px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -277,6 +286,9 @@
     }
     .magicalBody .landing-block .follower-block:last-child {
         border-right: 1px solid darkgray;
+    }
+    .magicalBody .intro-overlay div.join-text {
+        padding: 84px 15px 0 15px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -310,5 +322,8 @@
     .magicalBody .landing-block .follower-block:nth-child(4) {
         border-right: 1px solid darkgray;
         border-bottom: 1px solid darkgray;
+    }
+    .magicalBody .intro-overlay div.join-text {
+        padding: 32px 15px 0 15px;
     }
 }
